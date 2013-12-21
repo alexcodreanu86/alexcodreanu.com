@@ -4,9 +4,11 @@ body {
 	background: #11025E url('img/blue_abstract.jpg') repeat;
 
 }
+
 p {
 	font-size: 1.1em;
 }
+
 a {
 	color: #4fb69f;
 	text-decoration: none;
