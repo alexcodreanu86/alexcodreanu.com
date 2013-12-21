@@ -1,0 +1,3 @@
+User-agent: * 
+Disallow: /portfolio/ 
+Disallow: /HTML_CSS_projects/

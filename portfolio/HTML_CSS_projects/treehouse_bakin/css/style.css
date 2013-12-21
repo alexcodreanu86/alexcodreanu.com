@@ -1,0 +1,80 @@
+body {
+	font-family: 'Coming Soon', 'Nunito', sans-serif;
+	color: #E0D204;
+	background: #11025E url('img/blue_abstract.jpg') repeat;
+
+}
+p {
+	font-size: 1.1em;
+}
+a {
+	color: #4fb69f;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 1.750em;
+	letter-spacing: -1.5px;
+}
+
+h2 {
+	font-size: 1.500em;
+	color: #b4c34f;
+}
+
+.logo {
+	border-top: 15px;
+}
+
+.btn {
+	color: #faf3bc;
+	background: #940616 url('img/plank.png') no-repeat center;
+	padding: 15px 30px;
+	margin: 40px 0px;
+	border-radius: 25px;
+	text-transform: uppercase;
+}
+
+a.btn:hover {
+	background-color: #4cc4a7;
+	text-decoration : underline;
+	color: #FF6A00;	
+	background-image: none;
+}
+
+ul.nav {
+	margin:120px 0 0 0;
+	list-style: none;
+	float: right;
+}
+
+ul.nav li {
+	float: left;
+	margin-right: 40px;
+}
+
+ul.nav li a {
+	color: #faf3bc;
+}
+
+#intro {
+	margin:50px 0 75px 0;
+}
+
+#new-cupcakes img{
+	border: 8px solid #faf3bc;
+	margin: 0 0 8px 0;
+}
+
+#featured-cupcake img {
+	border: 8px solid #faf3bc;
+}
+
+#copyright {
+	border-top: 8px solid #2a0400;
+	padding: 10px 0;
+	margin: 15px 0;
+	text-align: center;
+}
+
+
