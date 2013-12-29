@@ -4,33 +4,43 @@ body {
 	background: #11025E url('img/blue_abstract.jpg') repeat;
 
 }
+
 p {
-	font-size: 1.1em;
+	font-size: 1.1rem;
 }
+
 a {
 	color: #4fb69f;
 	text-decoration: none;
 }
 
 h1 {
-	font-size: 1.750em;
-	letter-spacing: -1.5px;
+	font-size: 1.750rem;
+	letter-spacing: -0.1rem;
 }
 
 h2 {
-	font-size: 1.500em;
+	font-size: 1.500rem;
 	color: #b4c34f;
 }
 
-.logo {
-	border-top: 15px;
+img {
+	max-width: 100%;
+}
+
+div#logo img {
+	padding-top: 5%;
+}
+
+div.grid_3 img{
+	padding: 25% 0 0 3%;
 }
 
 .btn {
 	color: #faf3bc;
 	background: #940616 url('img/plank.png') no-repeat center;
 	padding: 15px 30px;
-	margin: 40px 0px;
+	margin: 40px 0;
 	border-radius: 25px;
 	text-transform: uppercase;
 }
@@ -43,7 +53,7 @@ a.btn:hover {
 }
 
 ul.nav {
-	margin:120px 0 0 0;
+	margin: 12% 0 0 0;
 	list-style: none;
 	float: right;
 }
@@ -58,16 +68,17 @@ ul.nav li a {
 }
 
 #intro {
-	margin:50px 0 75px 0;
+	margin: 50px 0 75px 0;
 }
 
-#new-cupcakes img{
+#two-pics img{
 	border: 8px solid #faf3bc;
-	margin: 0 0 8px 0;
+	margin: 0 0 15px 0;
 }
 
-#featured-cupcake img {
+#big-pic img {
 	border: 8px solid #faf3bc;
+
 }
 
 #copyright {
@@ -76,4 +87,5 @@ ul.nav li a {
 	margin: 15px 0;
 	text-align: center;
 }
+
 
