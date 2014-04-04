@@ -6,6 +6,9 @@ h3 {
   font-family: 'Bigelow Rules', cursive;
   font-size: 2em;
 }
+h4{
+	text-align: left;
+}
 
 #logo {
   border: 2px solid #000;
@@ -16,7 +19,6 @@ h3 {
 }
 
 .center{
-	position: absolute;
 	position:absolute;
 	right:0px;
 	margin:auto;

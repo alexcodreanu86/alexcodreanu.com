@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="cheat_style.css">
+		<title>Cheat Sheet</title>
+	</head>
+	<body>
+		<div id = "container">
+			<a href="../../../index.html"><button>Home</button></a>
+    <a href="../../index.html"><button>Portfolio</button></a>
+			<h1>SQL Cheat Sheet</h1>
+			<h3>Retrieving information</h3>
+			<hr>
+			<table>
+				<thead>
+					<tr>
+						<th>Function</th>
+						<th>Syntax</th>
+					</tr>
+
+				</thead>
+				<tbody>
+					<tr>
+						<td>Retrieving Information (General)</td>
+						<td class = "syntax">SELECT from_columns FROM table WHERE conditions;</td>
+					</tr>
+
+					<tr>
+						<td>Retrieving All Values</td>
+						<td class = "syntax">SELECT * FROM table;</td>
+					</tr>
+
+					<tr>
+						<td>Retrieving Some Values</td>
+						<td class = "syntax">SELECT * FROM table WHERE rec_name = "value";</td>
+					</tr>
+
+					<tr>
+						<td>Retrieving With Multiple Criteria</td>
+						<td class = "syntax">SELECT * FROM TABLE WHERE rec1 = "value1" AND rec2 = "value2";</td>
+					</tr>
+
+					<tr>
+						<td>Retrieving Specific Columns</td>
+						<td class = "syntax">SELECT column_name FROM table;</td>
+					</tr>
+
+					<tr>
+						<td>Retrieving Unique Output</td>
+						<td class = "syntax">SELECT DISTINCT column_name FROM table;</td>
+					</tr>
+
+					<tr>
+						<td>Sorting</td>
+						<td class = "syntax">SELECT col1, col2 FROM table ORDER BY col2;</td>
+					</tr>
+
+					<tr>
+						<td>Sorting Reverse</td>
+						<td class = "syntax">SELECT col1, col2 FROM table ORDER BY col2 DESC;</td>
+					</tr>
+
+					<tr>
+						<td>Counting Rows</td>
+						<td class = "syntax">SELECT COUNT(*) FROM table;</td>
+					</tr>
+
+					<tr>
+						<td>Grouping With Counting</td>
+						<td class = "syntax">SELECT owner, COUNT(*) FROM table </td>
+					</tr>
+
+					<tr>
+						<td>Maximum Value</td>
+						<td class = "syntax">SELECT MAX(col_name) AS label FROM table;</td>
+					</tr>
+
+					<tr>
+						<td>Selecting from multiple tables <br>(Join same table using alias w/&#8221;AS&#8221;)</td>
+						<td class = "syntax">SELECT pet.name, comment FROM pet, event WHERE pet.name = event.name;</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3 class = "title">Metadata</h3>
+			<hr>
+			<table>
+				<thead>
+					<tr>
+						<th>Function</th>
+						<th>Syntax</th>
+					</tr>
+				</head>
+				<tbody>
+					
+					<tr>
+						<td>Selecting a database</td>
+						<td class = "syntax">USE database;</td>
+					</tr>
+
+					<tr>
+						<td>Listing databases</td>
+						<td class = "syntax">	SHOW DATABASES;</td>
+					</tr>
+
+					<tr>
+						<td>Listing tables in a database</td>
+						<td class = "syntax">SHOW TABLES;</td>
+					</tr>
+
+					<tr>
+						<td>Describing the format of a table</td>
+						<td class = "syntax">DESCRIBE table;</td>
+					</tr>
+
+					<tr>
+						<td>Creating a database</td>
+						<td class = "syntax">CREATE DATABASE db_name;</td>
+					</tr>
+
+					<tr>
+						<td>Dropping a database</td>
+						<td class = "syntax">DROP DATABASE db_name;</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3 class = "title">SQL Data Types:</h3><hr>
+
+			<div id = "left">
+				
+				<ul>
+					<h4>Exact Numerics:</h4>
+					<li>INTEGER</li>
+					<li>SMALLINT</li>
+					<li>BIGINT</li>
+					<li>NUMERIC</li>
+					<li>DECIMAL</li>
+				</ul>
+				<ul>
+					<h4>Approximate Numerics:</h4>
+					<li>REAL</li>
+					<li>DOUBLE PRECISION</li>
+					<li>FLOAT</li>
+				</ul>
+				<ul>
+					<h4>Binary strings:</h4>
+					<li>BINARY</li>
+					<li>BINARY VARYING</li>
+					<li>BINARY LARGE OBJECT</li>
+				</ul>
+				<ul>
+					<h4>Boolean:</h4>
+					<li>BOOLEAN</li>
+				</ul>
+				<ul>
+					<h4>Collection Types:</h4>
+					<li>ARRAY</li>
+					<li>MULTISET</li>
+				</ul>
+			</div>
+			<div id = "right">
+				<ul>
+					<h4>Character Strings:</h4>
+					<li>CHARACTER</li>
+					<li>CHARACTER VARYING (VARCHAR)</li>
+					<li>CHARACTER LARGE OBJECT</li>
+					<li>NATIONAL CHARACTER</li>
+					<li>NATIONAL CHARACTER VARYING</li>
+					<li>NATIONAL CHARACTER LARGE OBJECT</li>
+				</ul>
+				<ul>
+					<h4>Datetimes:</h4>
+					<li>DATE</li>
+					<li>TIME WITHOUT TIMEZONE</li>
+					<li>TIMESTAMP WITHOUT TIMEZONE</li>
+					<li>TIME WITH TIMEZONE</li>
+					<li>TIMESTAMP WITH TIMEZONE</li>
+				</ul>
+				<ul>
+					<h4>Intervals:</h4>
+					<li>INTERVAL DAY</li>
+					<li>INTERVAL YEAR</li>
+				</ul>
+
+				<ul>
+					<h4>Other Types:</h4>
+					<li>ROW</li>
+					<li>XML</li>
+				<p></p>
+				</ul>						
+			</div>
+			<h3 class="title">SQL Value Functions</h3><hr>
+			<p>These SQL value functions perform operations on data. There are all kinds of operations that could conceivably be performed on data items, but these are some that are needed most often.</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Function</th>
+						<th>Effect</th>
+					</tr>
+				</head>
+				<tbody>
+					<tr>
+						<td class ="t_bold" colspan ="2">String Value Functions</td>
+					</tr>
+					<tr>
+						<td class = "syntax">SUBSTRING</td>
+						<td>Extracts a substring from a source string</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">SUBSTRING SIMILAR</td>
+						<td>Extracts a substring from a source string, using POSIX-based regular expressions</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">SUBSTRING_REGEX</td>
+						<td>Extracts from a string the first occurrence of an XQuery regular expression pattern and returns one occurrence of the matching substring</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">TRANSLATE_REGEX</td>
+						<td>Extracts from a string the first or every occurrence of an XQuery regular expression pattern and replaces it or them with an XQuery replacement string</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">UPPER</td>
+						<td>Converts a character string to all uppercase</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">LOWER</td>
+						<td>Converts a character string to all lowercase</td>
+					</tr>
+
+					</tr>
+						<td class = "syntax">TRIM</td>
+						<td>Trims off leading or trailing blanks</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">TRANSLATE</td>
+						<td>Transforms a source string from one character set to another</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">CONVERT</td>
+						<td>Transforms a source string from one character set to another</td>
+					</tr>
+
+
+					<tr>
+						<td class ="t_bold" colspan ="2">Numeric Value Functions</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">POSITION</td>
+						<td>Returns the starting position of a target string within a source string</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">CHARACTER_LENGTH</td>
+						<td>Returns the number of characters in a string</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">OCTET_LENGTH</td>
+						<td>Returns the number of octets (bytes) in a character string</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">EXTRACT</td>
+						<td>Extracts a single field from a datetime or i</td>
+					</tr>
+
+
+					<tr>
+						<td class ="t_bold" colspan ="2">Datetime Value Functions</td>
+					</tr>
+
+
+					<tr>
+						<td class = "syntax">CURRENT_DATE</td>
+						<td>Returns the current date</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">CURRENT_TIME(p)</td>
+						<td>Returns the current time; (p) is precision of seconds</td>
+					</tr>
+
+					<tr>
+						<td class = "syntax">CURRENT_TIMESTAMP(p)</td>
+						<td>Returns the current date and the current time; (p) is precision of seconds</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
+

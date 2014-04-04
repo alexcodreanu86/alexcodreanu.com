@@ -39,9 +39,9 @@ div.grid_3 img{
 .btn {
 	color: #faf3bc;
 	background: #940616 url('img/plank.png') no-repeat center;
-	padding: 15px 30px;
-	margin: 40px 0;
-	border-radius: 25px;
+	padding: 1.5%% 3%;
+	margin: 4% 0;
+	border-radius: 20px;
 	text-transform: uppercase;
 }
 
@@ -61,6 +61,7 @@ ul.nav {
 ul.nav li {
 	float: left;
 	margin-right: 40px;
+	display:inline;
 }
 
 ul.nav li a {
@@ -68,23 +69,23 @@ ul.nav li a {
 }
 
 #intro {
-	margin: 50px 0 75px 0;
+	margin: 5% 0 7.5% 0;
 }
 
 #two-pics img{
-	border: 8px solid #faf3bc;
-	margin: 0 0 15px 0;
+	border: 0.5rem solid #faf3bc;
+	margin: 0 0 3.65% 0;
 }
 
 #big-pic img {
-	border: 8px solid #faf3bc;
+	border: 0.5rem solid #faf3bc;
 
 }
 
 #copyright {
-	border-top: 8px solid #2a0400;
-	padding: 10px 0;
-	margin: 15px 0;
+	border-top: 0.5rem solid #2a0400;
+	padding: 1% 0;
+	margin: 1.5% 0;
 	text-align: center;
 }
 
