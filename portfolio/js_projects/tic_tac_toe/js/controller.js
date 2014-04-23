@@ -1,4 +1,3 @@
-
 var TicTacController = function(){
   var board = new Board();
   var view = new TicTacView;
@@ -42,7 +41,4 @@ var TicTacController = function(){
     })
   }
 
-  var aiTurn = function(){
-
-  }
 }
